@@ -24,11 +24,11 @@ var hourLong = new Date()
 
 //setInterval function, date, and hour formula
 
-//var interval = setInterval(function(){
+var interval = setInterval(function(){
   //var rightNow = dayjs();
   //$('#currentDay').html(rightNow.format('dddd, MMMM D ') + ' ' + rightNow.format('dddd') .substring(0,2));
  // $('#presentDay').html(currentTime + " " + rightNow.format('h:mm a'));
-//}, 1000);
+}, 1000);
 
 $('#9 #description').val(localStorage.getItem("9"))
 $('#10 #description').val(localStorage.getItem("10"))
