@@ -21,6 +21,7 @@ var schedule6pm = $("#6PM");
 var userInput;
 var currentTime = dayjs().hour();
 var hourLong = new Date()
+var textarea
 
 //setInterval function, date, and hour formula
 
@@ -53,7 +54,7 @@ function colorChange(){
 //used split to categorize order list of strings
 
       $(".time-block").each(function () {
-      var hourBlock = parseInt($(this).attr("id").split(" ")[1]); 
+        var hourBlock = parseInt($(this).attr("id")); 
     if (hourBlock < currentTime) {
       $(this).addClass("past");
      } else if (hourBlock === currentTime) {
@@ -72,18 +73,18 @@ setInterval(colorChange, 1000);
 
      
 
-    // save user input on page
-   // $(".saveBtn").on("click", function(){
-     // userInput = $(this).child(".textarea");
-     // console.log(hourLong);
-     // localStorage.setItem(hourLong, JSON.stringify(userInput));
+     //save user input on page
+    //$(".saveBtn").on("click", function(){
+    //userInput = $(this).child(".textarea");
+     //console.log(hourLong);
+     //localStorage.setItem(hourLong, JSON.stringify(userInput));
 
     //})
 
     //reset day for user
-    //$("#presentDay").on("click", function(){
-      //localStorage.clear();
-      //initPage()
-   // })
+    $("#presentDay").on("click", function(){
+      localStorage.clear();
+      initPage()
+   })
 
 
