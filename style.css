@@ -18,6 +18,10 @@ textarea {
   padding: 10px;
 }
 
+.container{
+  margin-bottom: 20px;
+  max-width:max-content;
+}
 .description {
   white-space: pre-wrap;
 }
@@ -50,7 +54,7 @@ textarea {
   background-color: #77dd77;
   color: white;
 }
-
+/* button styling*/
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -70,7 +74,7 @@ textarea {
   background-color: #06aed5;
   text-align: center;
   border-radius: 5px;
-  border-bottom: 10px;
+  
 
 }
 

@@ -1,6 +1,6 @@
 //Days.js DOM
 var today = dayjs();
-$('#time').text(today.format('dddd, MMMM D h:mm:ss'));
+$('#time').text(today.format('dddd, MMMM D, YYYY h:mm A'));
 
 // places current time and day on page
 const d = new Date();
@@ -20,8 +20,9 @@ var schedule6pm = $("#6PM");
 
 var userInput;
 var currentTime = dayjs().hour();
-var hourLong = new Date()
-var textarea
+var hourLong = new Date();
+var textarea;
+var btn2;
 
 //setInterval function, date, and hour formula
 
@@ -82,9 +83,9 @@ setInterval(colorChange, 1000);
     //})
 
     //reset day for user
-    $("#presentDay").on("click", function(){
+    $(".btn2").on("click", function(){
       localStorage.clear();
-      initPage()
+    
    })
 
 
