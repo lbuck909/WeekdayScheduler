@@ -31,5 +31,7 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
+Visual
+![image](https://user-images.githubusercontent.com/125102897/229634838-46c39229-928f-4c03-afcb-395e12c94ba9.png)
 
 
