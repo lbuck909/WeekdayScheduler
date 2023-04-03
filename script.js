@@ -25,9 +25,6 @@ $(document).ready(function () {
   }
 
   updateHour();
-  // check if hcurrent timeneeds to be updated
-
-  // load the saved data from local storage
 
   $("#hour-9 #description").val(localStorage.getItem("hour-9"));
   $("#hour-10 #description").val(localStorage.getItem("hour-10"));
@@ -38,16 +35,13 @@ $(document).ready(function () {
   $("#hour-15 #description").val(localStorage.getItem("hour-15"));
   $("#hour-16 #description").val(localStorage.getItem("hour-16"));
   $("#hour-17 #description").val(localStorage.getItem("hour-17"));
-
-  // dispaly current time on page
 });
 
 //Days.js DOM
 var today = dayjs();
-$("#time").text(today.format("dddd, MMMM D, YYYY h:mm A"));
+$("#time").text(today.format("dddd, MMMM D, YYYY"));
 
 // places current time and day on page
-const d = new Date();
 document.getElementById("currentDay").innerHTML = today;
 
 var btn2;
@@ -57,3 +51,5 @@ $(".btn2").on("click", function () {
   localStorage.clear();
   location.reload();
 });
+
+
